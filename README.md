@@ -11,7 +11,7 @@ This repository contains my personal resume in multiple formats (HTML). Designed
 - `css/` — Styling and interactivity
 
 ##  Tech Stack
-- HTML5, CSS3 (Bootstrap)
+- HTML5, CSS3
 - FontAwesome icons
 - GitHub Pages (for deployment)
 
