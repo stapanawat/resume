@@ -8,7 +8,7 @@ This repository contains my personal resume in multiple formats (HTML). Designed
 ##  Contents
 - `index.html` — Web resume (modern, responsive)
 - `assets/` — Images, fonts, icons
-- `css/`, `js/` — Styling and interactivity
+- `css/` — Styling and interactivity
 
 ##  Tech Stack
 - HTML5, CSS3 (Bootstrap)
