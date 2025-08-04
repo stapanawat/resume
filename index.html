@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAPANAWAT JAITO | Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 60%, #e3e6f5 100%);
+            color: #232946;
+        }
+        .resume-header {
+            background: linear-gradient(90deg, #232946 60%, #5f6caf 100%);
+            color: #fff;
+            padding: 2.5rem 0 2rem 0;
+            border-radius: 0 0 2rem 2rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+            position: relative;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+            margin-bottom: 1rem;
+            background: #fff;
+        }
+        .resume-header h1 {
+            font-size: 2.7rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        .resume-header .contact-info a {
+            color: #fff;
+            text-decoration: underline;
+            transition: color 0.2s;
+        }
+        .resume-header .contact-info a:hover {
+            color: #ffe082;
+        }
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #5f6caf;
+            margin-top: 2rem;
+            margin-bottom: 0.7rem;
+            letter-spacing: 1px;
+            border-left: 4px solid #5f6caf;
+            padding-left: 0.7rem;
+        }
+        .resume-content {
+            background: #fff;
+            border-radius: 1.2rem;
+            box-shadow: 0 2px 16px rgba(35,41,70,0.08);
+            padding: 2.2rem 2.2rem 1.5rem 2.2rem;
+            margin-top: -3.5rem;
+            margin-bottom: 2.5rem;
+            border: 1.5px solid #e3e6f0;
+        }
+        .skills-list, .career-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .skills-list li, .career-list li {
+            margin-bottom: 0.3rem;
+        }
+        .badge-skill {
+            background: linear-gradient(90deg, #e3e6f5 60%, #f3e7ff 100%);
+            color: #232946;
+            font-size: 0.97rem;
+            margin: 0.15rem 0.3rem 0.15rem 0;
+            border-radius: 0.7rem;
+            padding: 0.4em 0.9em;
+            font-weight: 500;
+            box-shadow: 0 1px 4px rgba(35,41,70,0.07);
+            transition: background 0.2s, color 0.2s;
+        }
+        .badge-skill:hover {
+            background: #5f6caf;
+            color: #fff;
+        }
+        .project-title {
+            font-weight: 600;
+            font-size: 1.13rem;
+            color: #232946;
+        }
+        .project-desc {
+            font-style: italic;
+            color: #555;
+        }
+        .divider {
+            border-top: 1.5px dashed #bfc9e0;
+            margin: 1.5rem 0 1.5rem 0;
+        }
+        .resume-content ul li::marker {
+            color: #0d6efd;
+        }
+        .fw-bold {
+            color: #5f6caf;
+        }
+        /* Portfolio Card */
+        .portfolio-card {
+            border-radius: 1rem;
+            box-shadow: 0 2px 12px rgba(35,41,70,0.08);
+            border: 1.5px solid #e3e6f0;
+            background: #f5f7fa;
+            transition: transform 0.15s, box-shadow 0.15s;
+            margin-bottom: 1.5rem;
+        }
+        .portfolio-card:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 6px 24px rgba(35,41,70,0.13);
+        }
+        .portfolio-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 1rem 1rem 0 0;
+        }
+        .portfolio-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #232946;
+        }
+        .portfolio-desc {
+            color: #555;
+            font-size: 0.97rem;
+        }
+        .lead {
+            font-size: 1.1rem;
+            color: #ffe082;
+            font-weight: 500;
+        }
+        .career-list li {
+            padding-left: 0.5em;
+            position: relative;
+        }
+        .career-list li::before {
+            content: '\2022';
+            color: #0d6efd;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        footer {
+            font-size: 0.98rem;
+            letter-spacing: 0.5px;
+        }
+        @media (max-width: 576px) {
+            .resume-content {
+                padding: 1rem;
+            }
+            .resume-header h1 {
+                font-size: 1.5rem;
+            }
+            .profile-img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-header text-center">
+        <img src="2.jpg" alt="Profile" class="profile-img shadow">
+        <h1>STAPANAWAT JAITO</h1>
+        <div class="contact-info mb-2">
+            <span>📍 Chiang Mai, Thailand</span> |
+            <a href="mailto:stapanawatjaito@gmail.com">stapanawatjaito@gmail.com</a> |
+            <span>📞 0620017779</span> |
+            <a href="http://wh7.cis-training.com/resume.com" target="_blank">Portfolio</a>
+        </div>
+        <div class="lead">Actively seeking internship opportunities in software or web development.</div>
+    </div>
+    <div class="container resume-content mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">SUMMARY</div>
+                <p>I am seeking an internship as a <span class="fw-bold">Fullstack Developer</span> to gain real-world development experience, enhance both frontend and backend skills, and prepare myself for a professional career.</p>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="section-title">PORTFOLIO</div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="portfolio-card">
+                    <a href="https://sudroa001.itch.io/whispers-of-a-fading-star1"><img src="1.png" class="portfolio-img" alt="whispers-of-a-fading-star"></a>
+                    <div class="p-3">
+                        <div class="portfolio-title">whispers-of-a-fading-star</div>
+                        <div class="portfolio-desc mb-2">A  Visual Novel  game. Built with GDscript, Godot , Stable Diffusion , Udio.</div>
+                        <span class="badge badge-skill">GDscript</span>
+                        <span class="badge badge-skill">Godot</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="portfolio-card">
+                    <a href="http://wh7.cis-training.com/shabu"><img src="3.png" class="portfolio-img" alt="Mobile App Demo"></a>
+                    <div class="p-3">
+                        <div class="portfolio-title">Minato Shabu Information System</div>
+                        <div class="portfolio-desc mb-2">A web-based restaurant management system for shabu restaurant. Features order, inventory, and promotion management. Built with PHP, MySQL, Bootstrap.</div>
+                        <span class="badge badge-skill">PHP</span>
+                        <span class="badge badge-skill">MySQL</span>
+                        <span class="badge badge-skill">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="portfolio-card">
+                    <a href="http://wh7.cis-training.com/mini"><img src="4.png" class="portfolio-img" alt="UX/UI Design"></a>
+                    <div class="p-3">
+                        <div class="portfolio-title">Web  Design Collection</div>
+                        <div class="portfolio-desc mb-2">A collection of web designs projects. Focus on modern, clean layouts and usability.</div>
+                        <span class="badge badge-skill">HTML</span>
+                        <span class="badge badge-skill">CSS</span>
+                        <span class="badge badge-skill">Prototyping</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-8">
+                <div class="section-title">PROJECT EXPERIENCE</div>
+                <div class="mb-2">
+                    <span class="project-title">Senior Project</span>
+                    <span class="text-muted float-end">July 2024 - Sep2025</span>
+                    <div class="project-desc">Developed a complete restaurant management system for a shabu restaurant.</div>
+                    <ul class="mb-1">
+                        <li>Led the development and project planning</li>
+                        <li>Utilized <span class="badge badge-skill">PHP</span> <span class="badge badge-skill">MySQL</span> <span class="badge badge-skill">Bootstrap</span> for web interface</li>
+                        <li>Designed database structure for order and inventory flow</li>
+                        <li>Fullstack Developer & Project Owner</li>
+                    </ul>
+                </div>
+                <div class="divider"></div>
+                <div class="section-title">EDUCATION</div>
+                <div>
+                    <strong>Rajamangala University of Technology Lanna</strong>
+                    <span class="text-muted float-end">June 2021 - now</span>
+                    <div><em>Bachelor of Business Administration in Business Information Systems</em></div>
+                    <div>Year 4 &nbsp; | &nbsp; GPA: 2.52</div>
+                    <div>Relevant Courses:</div>
+                    <ul class="mb-1">
+                        <li>Database System Concepts</li>
+                        <li>Web & Mobile Programming</li>
+                        <li>OOP (Object-Oriented Programming)</li>
+                        <li>UX/UI Design</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="section-title">SKILLS</div>
+                <div class="mb-2">
+                    <div class="fw-bold">Programming Languages</div>
+                    <span class="badge badge-skill">PHP</span>
+                    <span class="badge badge-skill">HTML</span>
+                    <span class="badge badge-skill">CSS</span>
+                    <span class="badge badge-skill">JavaScript</span>
+                    <span class="badge badge-skill">C++</span>
+                    <span class="badge badge-skill">Python</span>
+                    <span class="badge badge-skill">Dart</span>
+                    <span class="badge badge-skill">GDScript</span>
+                    <span class="badge badge-skill">SQL</span>
+                </div>
+                <div class="mb-2">
+                    <div class="fw-bold">Frameworks</div>
+                    <span class="badge badge-skill">Bootstrap</span>
+                    <span class="badge badge-skill">Django</span>
+                    <span class="badge badge-skill">PyQt</span>
+                    <span class="badge badge-skill">Dialogic</span>
+                </div>
+                <div class="mb-2">
+                    <div class="fw-bold">Tools</div>
+                    <span class="badge badge-skill">VSCode</span>
+                    <span class="badge badge-skill">Godot</span>
+                    <span class="badge badge-skill">Laragon</span>
+                    <span class="badge badge-skill">MySQL</span>
+                    <span class="badge badge-skill">Figma</span>
+                    <span class="badge badge-skill">FigJam</span>
+                    <span class="badge badge-skill">Android Studio</span>
+                    <span class="badge badge-skill">Git</span>
+                    <span class="badge badge-skill">GitHub</span>
+                </div>
+                <div class="mb-2">
+                    <div class="fw-bold">Soft Skills</div>
+                    <span class="badge badge-skill">Team Collaboration</span>
+                    <span class="badge badge-skill">Communication</span>
+                    <span class="badge badge-skill">Quick Problem-Solving</span>
+                </div>
+                <div class="mb-2">
+                    <div class="fw-bold">Language Proficiency</div>
+                    <span class="badge badge-skill">English – Good (reading, writing, speaking)</span>
+                </div>
+                <div class="divider"></div>
+                <div class="section-title">CAREER INTEREST</div>
+                <ul class="career-list">
+                    <li>Fullstack Developer</li>
+                    <li>Web Developer</li>
+                    <li>Backend Developer</li>
+                    <li>Frontend Developer</li>
+                    <li>Software Tester</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-muted mb-3">
+        &copy; 2025 STAPANAWAT JAITO. All rights reserved.
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
