@@ -2,7 +2,7 @@
 
 This repository contains my personal resume in multiple formats (HTML, Markdown, PDF). Designed for internships and job applications in Fullstack Web Development.
 
-## 🔗 Live Demo (GitHub Pages)
+## 🔗GitHub Pages
 👉 [View Online Resume](https://stapanawat.github.io/resume)
 
 ## 📂 Contents
